@@ -1,0 +1,44 @@
+{
+  "source": "google_places",
+  "name": "Google Places",
+  "sample": {
+    "query": "coworking Singapore",
+    "num": 5
+  },
+  "inputs": "query; optional location and other Google search parameters",
+  "outputs": "results[].places: names and available addresses, ratings and contact fields; usage.credits",
+  "limits": "Contact details may be missing; verify current hours and availability with the business.",
+  "outputExample": {
+    "source": "google_places",
+    "status": "done",
+    "results": [
+      {
+        "searchParameters": {
+          "q": "coffee in san francisco",
+          "gl": "us",
+          "hl": "en",
+          "type": "places",
+          "num": 10,
+          "page": 1,
+          "engine": "google"
+        },
+        "places": [
+          {
+            "position": 1,
+            "title": "Kopê House",
+            "address": "546 Laguna St",
+            "latitude": 37.776222,
+            "longitude": -122.42606,
+            "rating": 4.9,
+            "ratingCount": 76
+          }
+        ]
+      }
+    ],
+    "usage": {
+      "credits": 0.02
+    }
+  },
+  "repository": "flashdata-google-places-action",
+  "action_name": "Google Places Dataset - FlashData"
+}
